@@ -1,6 +1,7 @@
 ---
 applications:
-  - name: spring-cloud-pub-test
+  - name: cloud-jpa-test
+    memory: 512M
     buildpack: java_buildpack
     path: target/predix-spring-cloud-0.0.1.jar
     services:

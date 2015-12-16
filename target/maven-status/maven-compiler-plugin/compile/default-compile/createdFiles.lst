@@ -1,4 +1,6 @@
-com/ge/predix/config/CloudDataSourceConfig.class
-com/ge/predix/repositories/OperationRepository.class
+com/ge/predix/repositories/WorkOrderRepository.class
+com/ge/predix/domain/WorkOrder.class
 com/ge/predix/SpringCloudTestApplication.class
 com/ge/predix/domain/Operation.class
+com/ge/predix/config/CloudDataSourceConfig.class
+com/ge/predix/repositories/OperationRepository.class
