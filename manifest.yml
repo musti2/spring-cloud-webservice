@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: cloud-jpa-test
+  - name: tms-webservice
     memory: 512M
     buildpack: java_buildpack
     path: target/predix-spring-cloud-0.0.1.jar

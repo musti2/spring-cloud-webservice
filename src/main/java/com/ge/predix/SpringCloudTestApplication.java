@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration;
 
 @Configuration
-@ComponentScan
+@ComponentScan("com.ge.predix")
 @EnableAutoConfiguration
 @EnableJpaRepositories
 @Import(RepositoryRestMvcConfiguration.class)

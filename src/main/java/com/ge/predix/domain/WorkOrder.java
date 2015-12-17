@@ -26,45 +26,6 @@ public class WorkOrder {
 	private Date startDate, completionDate, otdDate;
 	
 	private Boolean ncrStatus;
-	
-	/**
-	 * 
-	 * @param id
-	 * @param created
-	 * @param modified
-	 * @param orgId
-	 * @param requiredTotalHours
-	 * @param actualTotalHours
-	 * @param timeRemainingTotalHours
-	 * @param workOrderNum
-	 * @param salesOrderNum
-	 * @param workOrderDesc
-	 * @param machine
-	 * @param component
-	 * @param cell
-	 * @param workOrderTypeCode
-	 * @param workOrderStatus
-	 * @param startDate
-	 * @param completionDate
-	 * @param otdDate
-	 * @param ncrStatus
-	 */
-	public WorkOrder(int id, Timestamp created, Timestamp modified, BigDecimal orgId,BigDecimal requiredTotalHours,BigDecimal actualTotalHours, BigDecimal timeRemainingTotalHours, String workOrderNum, String salesOrderNum, String workOrderDesc, String machine, String component, String cell, String workOrderTypeCode, String workOrderStatus, Date startDate, Date completionDate, Date otdDate, Boolean ncrStatus) {
-		this.id = id;
-		this.created = created;
-		this.modified = modified;
-		this.orgId = orgId;
-		this.requiredTotalHours = requiredTotalHours;
-		this.actualTotalHours = actualTotalHours;
-		this.timeRemainingTotalHours = timeRemainingTotalHours;
-		this.workOrderNum = workOrderNum;
-		this.salesOrderNum = salesOrderNum;
-		this.workOrderDesc = workOrderDesc; this.machine = machine; this.component = component; this.cell = cell; this.workOrderTypeCode = workOrderTypeCode; 
-		this.workOrderStatus = workOrderStatus;
-		this.startDate = startDate; this.completionDate = completionDate; this.otdDate = otdDate;
-		this.ncrStatus = ncrStatus;
-    }
-
 	/**
 	 * @return the ncrStatus
 	 */
@@ -331,5 +292,59 @@ public class WorkOrder {
 		this.otdDate = otdDate;
 	}
 
+
+	/**
+	 * 
+	 * @param id
+	 * @param created
+	 * @param modified
+	 * @param orgId
+	 * @param requiredTotalHours
+	 * @param actualTotalHours
+	 * @param timeRemainingTotalHours
+	 * @param workOrderNum
+	 * @param salesOrderNum
+	 * @param workOrderDesc
+	 * @param machine
+	 * @param component
+	 * @param cell
+	 * @param workOrderTypeCode
+	 * @param workOrderStatus
+	 * @param startDate
+	 * @param completionDate
+	 * @param otdDate
+	 * @param ncrStatus
+	 */
+
+	public WorkOrder(int id, Timestamp created, Timestamp modified, BigDecimal orgId,BigDecimal requiredTotalHours,BigDecimal actualTotalHours, BigDecimal timeRemainingTotalHours, String workOrderNum, String salesOrderNum, String workOrderDesc, String machine, String component, String cell, String workOrderTypeCode, String workOrderStatus, Date startDate, Date completionDate, Date otdDate, Boolean ncrStatus) {
+		this.id = id;
+		this.created = created;
+		this.modified = modified;
+		this.workOrderNum = workOrderNum;
+		this.salesOrderNum = salesOrderNum;
+		this.orgId = orgId;
+		this.startDate = startDate;
+		this.completionDate = completionDate;
+		this.workOrderDesc = workOrderDesc;
+		this.machine = machine;
+		this.component = component;
+		this.cell = cell;
+		this.workOrderTypeCode = workOrderTypeCode;
+		this.ncrStatus = ncrStatus;
+		this.otdDate = otdDate;
+		this.requiredTotalHours = requiredTotalHours;
+		this.actualTotalHours = actualTotalHours;
+		this.timeRemainingTotalHours = timeRemainingTotalHours;
+		this.workOrderStatus = workOrderStatus;
+    }
 	
+	public WorkOrder() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void add(WorkOrder workorder) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

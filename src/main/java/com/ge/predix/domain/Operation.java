@@ -15,7 +15,17 @@ public class Operation {
 	@Column(name="id", unique=true, nullable=false)
 	private Integer id;
 	
-	private Timestamp created, modified, startDate, completionDate;
+	@Column(name="created")
+	private Timestamp created;
+	
+	@Column(name="modified")
+	private Timestamp modified;
+	
+	@Column(name="start_date")
+	private Timestamp startDate;
+
+	@Column(name="completion_date")
+	private Timestamp completionDate;
 	/**
 	 * Strings or SQL Character columns
 	 */
@@ -23,7 +33,7 @@ public class Operation {
 	
 	private BigDecimal operationSeqNum, requiredHours, actualHours, timeRemaining, resourceId;
 	
-	private String[] ssoList, nameList;
+	private String  ssoList, nameList;
 	/**
 	 * @return the created
 	 */
@@ -167,28 +177,28 @@ public class Operation {
 	/**
 	 * @return the ssoList
 	 */
-	public String[] getSsoList() {
+	public String getSsoList() {
 		return ssoList;
 	}
 
 	/**
 	 * @param ssoList the ssoList to set
 	 */
-	public void setSsoList(String[] ssoList) {
+	public void setSsoList(String ssoList) {
 		this.ssoList = ssoList;
 	}
 
 	/**
 	 * @return the nameList
 	 */
-	public String[] getNameList() {
+	public String getNameList() {
 		return nameList;
 	}
 
 	/**
 	 * @param nameList the nameList to set
 	 */
-	public void setNameList(String[] nameList) {
+	public void setNameList(String nameList) {
 		this.nameList = nameList;
 	}
 
@@ -229,7 +239,7 @@ public class Operation {
 		this.id = id;
 	}
 
-	public Operation(int id, Timestamp created, Timestamp modified, Timestamp startDate, Timestamp completionDate, String workOrderNum, String operationDesc, String operationStatus, BigDecimal operationSeqNum, BigDecimal requiredHours, BigDecimal actualHours, BigDecimal timeRemaining, BigDecimal resourceId, String[] ssoList, String[] nameList) {
+	public Operation(int id, Timestamp created, Timestamp modified, Timestamp startDate, Timestamp completionDate, String workOrderNum, String operationDesc, String operationStatus, BigDecimal operationSeqNum, BigDecimal requiredHours, BigDecimal actualHours, BigDecimal timeRemaining, BigDecimal resourceId, String ssoList, String nameList) {
 		this.id = id;
 		this.created = created;
 		this.startDate = startDate;
@@ -253,6 +263,14 @@ public class Operation {
 	public void add(Operation operation) {
 		// TODO Auto-generated method stub
 		
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Operation [ssoList=" + ssoList + ", nameList=" + nameList + "]";
 	}
 
 	
