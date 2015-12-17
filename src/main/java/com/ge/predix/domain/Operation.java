@@ -33,7 +33,7 @@ public class Operation {
 	
 	private BigDecimal operationSeqNum, requiredHours, actualHours, timeRemaining, resourceId;
 	
-	private String  ssoList, nameList;
+	private String[] ssoList, nameList;
 	/**
 	 * @return the created
 	 */
@@ -174,31 +174,18 @@ public class Operation {
 		this.resourceId = resourceId;
 	}
 
-	/**
-	 * @return the ssoList
-	 */
-	public String getSsoList() {
-		return ssoList;
-	}
-
-	/**
-	 * @param ssoList the ssoList to set
-	 */
-	public void setSsoList(String ssoList) {
-		this.ssoList = ssoList;
-	}
 
 	/**
 	 * @return the nameList
 	 */
-	public String getNameList() {
+	public String[] getNameList() {
 		return nameList;
 	}
 
 	/**
 	 * @param nameList the nameList to set
 	 */
-	public void setNameList(String nameList) {
+	public void setNameList(String[] nameList) {
 		this.nameList = nameList;
 	}
 
@@ -239,7 +226,7 @@ public class Operation {
 		this.id = id;
 	}
 
-	public Operation(int id, Timestamp created, Timestamp modified, Timestamp startDate, Timestamp completionDate, String workOrderNum, String operationDesc, String operationStatus, BigDecimal operationSeqNum, BigDecimal requiredHours, BigDecimal actualHours, BigDecimal timeRemaining, BigDecimal resourceId, String ssoList, String nameList) {
+	public Operation(int id, Timestamp created, Timestamp modified, Timestamp startDate, Timestamp completionDate, String workOrderNum, String operationDesc, String operationStatus, BigDecimal operationSeqNum, BigDecimal requiredHours, BigDecimal actualHours, BigDecimal timeRemaining, BigDecimal resourceId, String[] ssoList, String[] nameList) {
 		this.id = id;
 		this.created = created;
 		this.startDate = startDate;
