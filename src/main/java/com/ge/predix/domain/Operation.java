@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
 @Entity
 public class Operation {
 	@Id
@@ -32,8 +33,10 @@ public class Operation {
 	private String workOrderNum, operationDesc, operationStatus;
 	
 	private BigDecimal operationSeqNum, requiredHours, actualHours, timeRemaining, resourceId;
+
+	private String[] ssoList;	
+	private String[] nameList;
 	
-	private String[] ssoList, nameList;
 	/**
 	 * @return the created
 	 */
@@ -174,21 +177,6 @@ public class Operation {
 		this.resourceId = resourceId;
 	}
 
-
-	/**
-	 * @return the nameList
-	 */
-	public String[] getNameList() {
-		return nameList;
-	}
-
-	/**
-	 * @param nameList the nameList to set
-	 */
-	public void setNameList(String[] nameList) {
-		this.nameList = nameList;
-	}
-
 	/**
 	 * @return the startDate
 	 */
@@ -226,7 +214,7 @@ public class Operation {
 		this.id = id;
 	}
 
-	public Operation(int id, Timestamp created, Timestamp modified, Timestamp startDate, Timestamp completionDate, String workOrderNum, String operationDesc, String operationStatus, BigDecimal operationSeqNum, BigDecimal requiredHours, BigDecimal actualHours, BigDecimal timeRemaining, BigDecimal resourceId, String[] ssoList, String[] nameList) {
+	public Operation(int id, Timestamp created, Timestamp modified, Timestamp startDate, Timestamp completionDate, String workOrderNum, String operationDesc, String operationStatus, BigDecimal operationSeqNum, BigDecimal requiredHours, BigDecimal actualHours, BigDecimal timeRemaining, BigDecimal resourceId) {
 		this.id = id;
 		this.created = created;
 		this.startDate = startDate;
@@ -238,9 +226,7 @@ public class Operation {
 		this.requiredHours = requiredHours;
 		this.actualHours = actualHours; 
 		this.timeRemaining = timeRemaining; 
-		this.resourceId = resourceId; 
-		this.ssoList = ssoList; 
-		this.nameList = nameList;
+		this.resourceId = resourceId;
     }
 
 	public Operation() {
