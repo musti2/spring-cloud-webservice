@@ -2,11 +2,13 @@ package com.ge.predix.domain;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
 
 
 @Entity
@@ -34,8 +36,6 @@ public class Operation {
 	
 	private BigDecimal operationSeqNum, requiredHours, actualHours, timeRemaining, resourceId;
 
-	private String[] ssoList;	
-	private String[] nameList;
 	
 	/**
 	 * @return the created
@@ -237,14 +237,5 @@ public class Operation {
 		// TODO Auto-generated method stub
 		
 	}
-
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
-	@Override
-	public String toString() {
-		return "Operation [ssoList=" + ssoList + ", nameList=" + nameList + "]";
-	}
-
 	
 }
