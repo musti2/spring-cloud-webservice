@@ -1,6 +1,6 @@
-/Users/mustafasamar/Documents/Projects/javaprojects/spring-cloud-service-connector/src/main/java/com/ge/predix/repositories/OperationRepository.java
-/Users/mustafasamar/Documents/Projects/javaprojects/spring-cloud-service-connector/src/main/java/com/ge/predix/domain/WorkOrder.java
-/Users/mustafasamar/Documents/Projects/javaprojects/spring-cloud-service-connector/src/main/java/com/ge/predix/SpringCloudTestApplication.java
-/Users/mustafasamar/Documents/Projects/javaprojects/spring-cloud-service-connector/src/main/java/com/ge/predix/domain/Operation.java
-/Users/mustafasamar/Documents/Projects/javaprojects/spring-cloud-service-connector/src/main/java/com/ge/predix/config/CloudDataSourceConfig.java
-/Users/mustafasamar/Documents/Projects/javaprojects/spring-cloud-service-connector/src/main/java/com/ge/predix/repositories/WorkOrderRepository.java
+/Users/mustafasamar/Documents/STS Projects/tms-webservice/src/main/java/com/ge/predix/SpringCloudTestApplication.java
+/Users/mustafasamar/Documents/STS Projects/tms-webservice/src/main/java/com/ge/predix/repositories/OperationRepository.java
+/Users/mustafasamar/Documents/STS Projects/tms-webservice/src/main/java/com/ge/predix/domain/WorkOrder.java
+/Users/mustafasamar/Documents/STS Projects/tms-webservice/src/main/java/com/ge/predix/config/CloudDataSourceConfig.java
+/Users/mustafasamar/Documents/STS Projects/tms-webservice/src/main/java/com/ge/predix/domain/Operation.java
+/Users/mustafasamar/Documents/STS Projects/tms-webservice/src/main/java/com/ge/predix/repositories/WorkOrderRepository.java
